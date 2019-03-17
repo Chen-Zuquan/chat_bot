@@ -1,0 +1,284 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "stock",
+        "synonyms": ["stocks", "shares"]
+      },
+      {
+        "value": "company",
+        "synonyms": ["firm", "corporation"]
+      },
+      {
+        "value": "information",
+        "synonyms": ["info", "message"]
+      },
+      {
+        "value": "real-time price",
+        "synonyms": ["real time price"]
+      },
+      {
+        "value": "market_capitalization",
+        "synonyms": ["value"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i'm want to know something about AAPL to help me to analyse it ",
+        "intent": "ask_for_information",
+        "entities": []
+      },
+      {
+        "text": "show me some details about TSLA",
+        "intent": "ask_for_information",
+        "entities": []
+      },
+      {
+        "text": "I want to know more things about MSFT",
+        "intent": "ask_for_information",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for some  messages about AMZN",
+        "intent": "ask_for_information",
+        "entities": []
+      },
+      {
+        "text": "please tell me somethings about GS",
+        "intent": "ask_for_information",
+        "entities": []
+      },
+      {
+        "text": "the value of AAPL",
+        "intent": "market_capitalization",
+        "entities":
+        []
+      },
+      {
+        "text": "the market capitalization of TSLA",
+        "intent": "market_capitalization",
+        "entities": []
+      },
+      {
+        "text": "i want to know some messages about the value of GS",
+        "intent": "market_capitalization",
+        "entities": []
+      },
+      {
+        "text": "i need the information of the market capitalization of FB",
+        "intent": "market_capitalization",
+        "entities": []
+      },
+      {
+        "text": "How many shares of TSLA are traded today",
+        "intent": "volume_of_transactions",
+        "entities": []
+      },
+      {
+        "text": "The volume of transactions of AAPL today",
+        "intent": "volume_of_transactions",
+        "entities": []
+      },
+      {
+        "text": "How many stocks of AMZN is changed hands today",
+        "intent": "volume_of_transactions",
+        "entities": []
+      },
+      {
+        "text": "I want to know something about the volume of transactions of PG",
+        "intent": "volume_of_transactions",
+        "entities": []
+      },
+      {
+        "text": "Please tell me something about the volume of transactions",
+        "intent": "volume_of_transactions",
+        "entities": []
+      },
+      {
+        "text": "i want to know more about the volume of transactions",
+        "intent": "volume_of_transactions",
+        "entities": []
+      },
+      {
+        "text": "the volume of transactions ,please",
+        "intent": "volume_of_transactions",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "How much is the the present price of AAPL",
+        "intent": "real_time_price",
+        "entities": []
+      },
+      {
+        "text": "i prefer to know the real-time price",
+        "intent": "real_time_price",
+        "entities": []
+      },
+      {
+        "text": "I want to know the real-time price of AAPL",
+        "intent": "real_time_price",
+        "entities": []
+      },
+      {
+        "text": "i am looking for some information about the real time price of FB",
+        "intent": "real_time_price",
+        "entities": []
+      },
+      {
+        "text": "real-time price of TSLA's stocks,please ",
+        "intent": "real_time_price",
+        "entities": []
+      },
+      {
+        "text": "I am searching some info about the real-time price of BABA",
+        "intent": "real_time_price",
+        "entities": []
+      }
+    ]
+  }
+}
