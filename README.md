@@ -76,7 +76,7 @@ Go to https://wxpy.readthedocs.io/zh/latest/#
 ## operating instructions
 1.Download all files in a same folder.
 2.You Open ```chat_bot.py``` file in any IDE to check if the function is complete, the IDE I used to run is Pycharm.
-3.Open chatbot.py file
+3.Open ```wx_chat.py``` file
 4.Change the parameter below to chat with your own friend
 ```
 # search the friend whose name is "陈祖泉", and sex is male 
@@ -84,3 +84,7 @@ my_friend = bot.friends().search('陈祖泉', sex=MALE)[0]
 ```
 5.Run it, an QR code will created automatically, use your Wechat to scan the QR code and log in.
 6.Start to chat!
+
+## contact information for the distributor or programmer
+Email: 597359489@qq.com
+Website: https://github.com/Chen-Zuquan
