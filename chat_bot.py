@@ -29,7 +29,9 @@ policy = {
 
 intents = {"real_time_price", "volume_of_transactions", "market_capitalization"}
 if __name__ == '__main__':
-    interpreter = Interpreter.load("D:\\python_project\\./projects/default/default\\model_20190316-123239")
+    with open('projects/model_path', 'r') as f:
+        model_directory = f.read()
+    interpreter = Interpreter.load(model_directory)
     print("we are already to provide service with you!")
     state = INIT
     intent = ""

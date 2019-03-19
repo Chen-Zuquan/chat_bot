@@ -32,18 +32,14 @@ policy = {
 
 intents = {"real_time_price", "volume_of_transactions", "market_capitalization"}
 
-interpreter = Interpreter.load("D:\\python_project\\./projects/default/default\\model_20190316-123239")
+with open('projects/model_path', 'r') as f:
+    model_directory = f.read()
+interpreter = Interpreter.load(model_directory)
 print("load ok!")
 
-# 初始化机器人，扫码登陆
 bot = Bot()
-
 my_friend = bot.friends().search('陈祖泉', sex=MALE)[0]
-
-# 发送文本给好友
 my_friend.send('Hello we are already providing you our service!')
-
-# 打印来自其他好友、群聊和公众号的消息
 @bot.register()
 def print_others(msg):
     print(msg)
@@ -61,7 +57,7 @@ def reply_my_friend(msg):
     global time
     pattern = re.compile(r'.*(b|B)ye$')
     if pattern.match(msg.text):
-        return
+        my_friend.send("I hope I have provided something useful!")
     if intent not in intents:
         intent = get_intent(interpreter, msg.text)
     if len(entity) == 0:
